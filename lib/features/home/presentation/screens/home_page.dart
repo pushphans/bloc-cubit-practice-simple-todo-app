@@ -63,7 +63,9 @@ class _HomePageState extends State<HomePage> {
       ),
 
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/add-todo');
+        },
         child: Icon(Icons.add),
       ),
     );
