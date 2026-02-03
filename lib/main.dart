@@ -1,4 +1,4 @@
-import 'package:bloc_cubit_practice_simple_todo_app/features/home/presentation/screens/home_page.dart';
+import 'package:bloc_cubit_practice_simple_todo_app/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: router,
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
     );
   }
 }
